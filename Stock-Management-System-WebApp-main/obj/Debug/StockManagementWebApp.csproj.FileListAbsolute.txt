@@ -1,0 +1,30 @@
+C:\Users\DELL\Documents\Visual Studio 2013\Projects\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.dll.config
+C:\Users\DELL\Documents\Visual Studio 2013\Projects\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.dll
+C:\Users\DELL\Documents\Visual Studio 2013\Projects\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.pdb
+C:\Users\DELL\Documents\Visual Studio 2013\Projects\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2013\Projects\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.dll
+C:\Users\DELL\Documents\Visual Studio 2013\Projects\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.pdb
+C:\Users\Trainer 402\Desktop\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.dll.config
+C:\Users\Trainer 402\Desktop\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.dll
+C:\Users\Trainer 402\Desktop\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.pdb
+C:\Users\Trainer 402\Desktop\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.csprojResolveAssemblyReference.cache
+C:\Users\Trainer 402\Desktop\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.dll
+C:\Users\Trainer 402\Desktop\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.pdb
+C:\Users\DELL\Desktop\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.dll
+C:\Users\DELL\Desktop\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.dll.config
+C:\Users\DELL\Desktop\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.dll
+C:\Users\DELL\Desktop\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.pdb
+C:\Users\DELL\Desktop\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.pdb
+C:\Users\DELL\Desktop\programmingppp\New folder\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.dll.config
+C:\Users\DELL\Desktop\programmingppp\New folder\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.dll
+C:\Users\DELL\Desktop\programmingppp\New folder\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.pdb
+C:\Users\DELL\Desktop\programmingppp\New folder\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\programmingppp\New folder\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.dll
+C:\Users\DELL\Desktop\programmingppp\New folder\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.pdb
+C:\Users\DELL\Desktop\ALL\New folder\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.dll.config
+C:\Users\DELL\Desktop\ALL\New folder\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.dll
+C:\Users\DELL\Desktop\ALL\New folder\StockManagementWebApp\StockManagementWebApp\bin\StockManagementWebApp.pdb
+C:\Users\DELL\Desktop\ALL\New folder\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\ALL\New folder\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.dll
+C:\Users\DELL\Desktop\ALL\New folder\StockManagementWebApp\StockManagementWebApp\obj\Debug\StockManagementWebApp.pdb
