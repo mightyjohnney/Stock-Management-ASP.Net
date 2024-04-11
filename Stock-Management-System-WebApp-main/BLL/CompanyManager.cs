@@ -27,9 +27,9 @@ namespace StockManagementWebApp.BLL
             int rowAffected = aCompanyGateway.CompanySave(aCompany);
             if (rowAffected > 0)
             {
-                return "Save Successful!!!";
+                return "Saved Successful!!!";
             }
-            return "Save Failed!!!";
+            return "Saved Failed!!!";
 
         }
         public List<Company> GetAllCompanies()
