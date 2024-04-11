@@ -9,7 +9,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  color: #FFFFFF;
+  color: blue;
   font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
