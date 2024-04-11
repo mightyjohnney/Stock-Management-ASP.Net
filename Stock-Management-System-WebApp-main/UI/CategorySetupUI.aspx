@@ -11,7 +11,7 @@
             font-style: italic;
         }
          .auto-style1 {
-             height: 59px;
+             height: 65px;
          }
     </style>
   
