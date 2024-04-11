@@ -25,9 +25,9 @@ namespace StockManagementWebApp.BLL
             int rowAffected = aCategoryGateway.Save(aCategory);
             if (rowAffected > 0)
             {
-                return "Save Succesful";
+                return "Saved Succesful";
             }
-            return "Save Failed"; 
+            return "Saved Failed";
         }
 
         public string UpdateCategoryById(Category aCategory)
