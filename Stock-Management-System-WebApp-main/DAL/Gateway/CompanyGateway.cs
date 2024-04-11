@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 using StockManagementWebApp.DAL.Model;
 using StockManagementWebApp.DAL.ViewModel;
 
@@ -13,83 +11,69 @@ namespace StockManagementWebApp.DAL.Gateway
     {
         public List<Company> GetAllCompanies()
         {
-            Query = "SELECT * FROM Company";
-            Command = new SqlCommand(Query, Connection);
-            Connection.Open();
-            Reader = Command.ExecuteReader();
-            List<Company> companies = new List<Company>();
-            while (Reader.Read())
-            {
-                Company aCompany = new Company();
-                aCompany.Id = (int)Reader["Id"];
-                aCompany.Name = Reader["Name"].ToString();
-                companies.Add(aCompany);
-            }
-            Reader.Close();
-            Connection.Close();
-            return companies;
-        }
-
-        public List<Company> GetCompanies()
-        {
-        
-            Query = "SELECT * FROM Company";
-
-            Command = new SqlCommand(Query, Connection);
-
-            Connection.Open();
-
-            Reader = Command.ExecuteReader();
-
             List<Company> companies = new List<Company>();
 
-            while (Reader.Read())
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
-                Company aCompany = new Company();
-                aCompany.Id = Convert.ToInt32(Reader["Id"]);
-                aCompany.Name = Reader["Name"].ToString();
+                string query = "SELECT * FROM Company";
 
-                companies.Add(aCompany);
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Company aCompany = new Company
+                            {
+                                Id = Convert.ToInt32(reader["Id"]),
+                                Name = reader["Name"].ToString()
+                            };
+
+                            companies.Add(aCompany);
+                        }
+                    }
+                }
             }
 
-            Connection.Close();
             return companies;
         }
 
         public bool IsCompanyNameExists(string name)
         {
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                string query = "SELECT COUNT(*) FROM Company WHERE Name = @companyName";
 
-            Query = "SELECT * FROM Company WHERE Name=@companyName";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@companyName", name);
 
-            Command = new SqlCommand(Query, Connection);
+                    connection.Open();
 
-            Command.Parameters.AddWithValue("companyName", name);
+                    int count = (int)command.ExecuteScalar();
 
-            Connection.Open();
-
-            Reader = Command.ExecuteReader();
-            bool IsExist = Reader.HasRows;
-
-            Connection.Close();
-            return IsExist;
+                    return count > 0;
+                }
+            }
         }
 
         public int CompanySave(Company aCompany)
         {
-            Query = "INSERT INTO Company VALUES(@Name)";
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                string query = "INSERT INTO Company (Name) VALUES (@Name)";
 
-            Command= new SqlCommand(Query, Connection);
-            Command.Parameters.Clear();
-            Command.Parameters.Add("Name", SqlDbType.VarChar);
-            Command.Parameters["Name"].Value = aCompany.Name;
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Name", aCompany.Name);
 
-            Connection.Open();
+                    connection.Open();
 
-            int rowAffected = Command.ExecuteNonQuery();
-
-            Connection.Close();
-
-            return rowAffected;
+                    return command.ExecuteNonQuery();
+                }
+            }
         }
     }
 }
